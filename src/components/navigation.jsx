@@ -1,4 +1,4 @@
-export const Navigation = (props) => {
+export const Navigation = () => {
   return (
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
       <div className='container'>
@@ -16,8 +16,18 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
           </button>
           <a className='navbar-brand page-scroll' href='#page-top'>
-            React Landing Page
-          </a>{' '}
+          <img
+            src="img/metasquare.png"
+            style={{
+              display: "block",
+              float: "left",
+              overflow: "hidden",
+              padding: 0,
+            }}
+            alt="MetasquareLogo"
+            width="22"
+          /> <span style={{display: "block", overflow: "hidden", verticalAlign: "middle"}}>etasquare</span>
+          </a>
         </div>
 
         <div
@@ -25,36 +35,36 @@ export const Navigation = (props) => {
           id='bs-example-navbar-collapse-1'
         >
           <ul className='nav navbar-nav navbar-right'>
-            <li>
+            {/* <li>
               <a href='#features' className='page-scroll'>
                 Features
               </a>
-            </li>
+            </li> */}
             <li>
               <a href='#about' className='page-scroll'>
                 About
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href='#services' className='page-scroll'>
                 Services
               </a>
-            </li>
+            </li> */}
             <li>
               <a href='#portfolio' className='page-scroll'>
-                Gallery
+                Portfolio
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href='#testimonials' className='page-scroll'>
                 Testimonials
               </a>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <a href='#team' className='page-scroll'>
                 Team
               </a>
-            </li>
+            </li> */}
             <li>
               <a href='#contact' className='page-scroll'>
                 Contact
